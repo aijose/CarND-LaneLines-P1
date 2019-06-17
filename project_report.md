@@ -129,7 +129,7 @@ function was modified. The following changes were made:
 
 ![single]
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Potential shortcomings with current pipeline
 
 Although the approach outlined in the previous section generates single lines
 that provide reasonable approximations of the lane lines, it is not without
@@ -148,7 +148,7 @@ shortcomings. Some of the shortcomings of this approach are:
   completely ignored.
 
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Possible improvements to current pipeline
 
 Some potential improvements to the algorithm are listed below:
 
