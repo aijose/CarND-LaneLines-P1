@@ -12,13 +12,13 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
-[gray]: ./gray.jpg "Grayscale"
-[blur]: ./blur_gray.jpg "Gaussian Smoothing"
-[canny]: ./canny_edges.jpg "Canny Edges"
-[masked]: ./masked_image.jpg "Masked Image"
-[hough]: ./hough_lines.jpg "Hough Lines"
-[overlay]: ./final_result.jpg "Final overlaid image"
-[single]: ./single_line.jpg "Single continuous lines"
+[gray]: ./report_images/gray.jpg "Grayscale"
+[blur]: ./report_images/blur_gray.jpg "Gaussian Smoothing"
+[canny]: ./report_images/canny_edges.jpg "Canny Edges"
+[masked]: ./report_images/masked_image.jpg "Masked Image"
+[hough]: ./report_images/hough_lines.jpg "Hough Lines"
+[overlay]: ./report_images/final_result.jpg "Final overlaid image"
+[single]: ./report_images/single_line.jpg "Single continuous lines"
 
 ---
 
