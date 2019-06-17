@@ -119,7 +119,10 @@ function was modified. The following changes were made:
   were eliminated based on their deviation from the average slope or average
   intercept value. Edges with a slope or intercept value that differs from the
   average values (computed in the previous step) were eliminated and were not
-  used to compute the update average slope and intercept.
+  used to compute the update average slope and intercept. Also, edges whose
+  absolute value is below the ratio of the height/width of the image are also
+  eliminated because this would imply intersection between the left and right
+  lanes and is therefore not reasonable.
 
 * The lines generated using the modified average slope and intercept values
   provided reasonable approximations for the lane lines, as shown below:
