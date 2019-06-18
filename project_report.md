@@ -134,10 +134,8 @@ individual images can be used to process a video by processing the images that
 constitute the video. Shown below are the results obtained for videos with
 white and yellow lane lines (clicking the image will open the YouTube video):
 
-<p align="center">
 [![IMAGE ALT TEXT HERE](report_images/youtube_whitelanes.png)](https://youtu.be/z8NFh__pI4c)
 [![IMAGE ALT TEXT HERE](report_images/youtube_yellowlanes.png)](https://youtu.be/PaovDLRF4J0)
-</p>
 
 ### 2. Potential shortcomings with current pipeline
 
