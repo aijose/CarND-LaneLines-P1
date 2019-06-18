@@ -129,14 +129,24 @@ function was modified. The following changes were made:
 
 ![single]
 
+Since a video is merely a sequence of images, the method described above for
+individual images can be used to process a video by processing the images that
+constitute the video. Shown below are the results obtained for videos with
+white and yellow lane lines (clicking the image will open the YouTube video):
+
+<p align="center">
+[![IMAGE ALT TEXT HERE](report_images/youtube_whitelanes.png)](https://youtu.be/z8NFh__pI4c)
+[![IMAGE ALT TEXT HERE](report_images/youtube_yellowlanes.png)](https://youtu.be/PaovDLRF4J0)
+</p>
+
 ### 2. Potential shortcomings with current pipeline
 
 Although the approach outlined in the previous section generates single lines
 that provide reasonable approximations of the lane lines, it is not without
 shortcomings. Some of the shortcomings of this approach are:
 
-* For images containing few edges or many outlier edges, the average slope and
-  intercept is still likely to experience inaccuracies.
+* For images containing few edges or many outlier edges, errors may creep in to
+  the average slope and intercept calculation.
 
 * For images where there is a sharp curvature in the lane (for e.g. when there
   is a sharp turn in the road), trying to approximate the curved lanes with a
@@ -147,6 +157,9 @@ shortcomings. Some of the shortcomings of this approach are:
   region. This could result in the lane lines going undetected or even
   completely ignored.
 
+* When there are dividers or other road boundaries in the region of interest,
+  the algorithm can get confused by lines formed by these structures and
+  generate incorrect intercepts and slopes.
 
 ### 3. Possible improvements to current pipeline
 
@@ -165,3 +178,10 @@ Some potential improvements to the algorithm are listed below:
   analysis can be performed to optimize these parameters. In particular, it
   would be helpful to optimize the parameters for images where failure or poor
   performance is observed.
+
+* When dealing with videos, the current approach processes each image
+  independent of the rest. Since adjacent frames in a continuous video have
+  similar surroundings, information from previous frames can be used to
+  determine the lane  lines in the current frame. This is particularly helpful
+  when previous frames contain clear lane lines while the current frame may
+  have fewer or unclear lane lines.
